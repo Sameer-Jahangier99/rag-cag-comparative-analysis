@@ -1,0 +1,302 @@
+{
+  "config": "vanilla_rag",
+  "summary": {
+    "total_queries": 15,
+    "runtime_seconds": 31.365503787994385,
+    "latency": {
+      "total": {
+        "mean": 597.0387739333091,
+        "median": 654.7479509972618,
+        "p50": 654.7479509972618,
+        "p95": 757.232373501756,
+        "p99": 848.2028139015891,
+        "std": 129.25717099404991,
+        "min": 403.1318979978096,
+        "max": 870.9454240015475
+      },
+      "retrieval": {
+        "mean": 309.98820846677216,
+        "median": 274.8614779993659
+      },
+      "generation": {
+        "mean": 286.8614099997406,
+        "median": 247.09695599449333
+      }
+    },
+    "tokens": {
+      "total": {
+        "sum": 3294,
+        "mean": 219.6,
+        "median": 212.0,
+        "std": 36.27634674734121
+      },
+      "prompt": {
+        "mean": 188.46666666666667,
+        "median": 197.0
+      },
+      "context": {
+        "mean": 99.33333333333333,
+        "median": 97.0
+      },
+      "generation": {
+        "mean": 31.133333333333333,
+        "median": 28.0
+      }
+    },
+    "memory": {
+      "cpu": {
+        "mean_mb": 503.676171875,
+        "peak_mb": 505.48828125
+      },
+      "gpu": {
+        "mean_mb": 0.0,
+        "peak_mb": 0.0
+      }
+    },
+    "throughput": {
+      "queries_per_second": 0.478207909728917
+    }
+  },
+  "individual_queries": [
+    {
+      "query_id": 0,
+      "query": "What is the capital of France?",
+      "answer": "The provided context does not contain relevant information about the capital of France.",
+      "total_latency_ms": 681.9421059990418,
+      "retrieval_latency_ms": 290.4879879934015,
+      "generation_latency_ms": 391.1049570015166,
+      "total_tokens": 171,
+      "prompt_tokens": 156,
+      "context_tokens": 71,
+      "generation_tokens": 15,
+      "cpu_memory_mb": 505.48828125,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 1,
+      "query": "Who wrote the novel '1984'?",
+      "answer": "The provided context does not contain relevant information about the novel '1984'.",
+      "total_latency_ms": 697.870370997407,
+      "retrieval_latency_ms": 439.779868000187,
+      "generation_latency_ms": 257.88746699981857,
+      "total_tokens": 194,
+      "prompt_tokens": 178,
+      "context_tokens": 80,
+      "generation_tokens": 16,
+      "cpu_memory_mb": 503.771484375,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 2,
+      "query": "When did World War II end?",
+      "answer": "World War II ended in 1945.",
+      "total_latency_ms": 403.1318979978096,
+      "retrieval_latency_ms": 258.2041709974874,
+      "generation_latency_ms": 144.7889720002422,
+      "total_tokens": 212,
+      "prompt_tokens": 202,
+      "context_tokens": 102,
+      "generation_tokens": 10,
+      "cpu_memory_mb": 503.775390625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 3,
+      "query": "What is the largest planet in the solar system?",
+      "answer": "The largest planet in the Solar System is Jupiter.",
+      "total_latency_ms": 403.57038900401676,
+      "retrieval_latency_ms": 254.32478600123432,
+      "generation_latency_ms": 149.14437499828637,
+      "total_tokens": 184,
+      "prompt_tokens": 173,
+      "context_tokens": 78,
+      "generation_tokens": 11,
+      "cpu_memory_mb": 503.474609375,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 4,
+      "query": "Who discovered penicillin?",
+      "answer": "The provided context does not contain relevant information about the discovery of penicillin. The contexts discuss the plum pudding model of the atom, Americans during the Vietnam War era, and the European colonization of the Americas, but none of them mention penicillin or its discovery.",
+      "total_latency_ms": 671.4115349968779,
+      "retrieval_latency_ms": 264.0421289979713,
+      "generation_latency_ms": 407.1869850013172,
+      "total_tokens": 282,
+      "prompt_tokens": 227,
+      "context_tokens": 161,
+      "generation_tokens": 55,
+      "cpu_memory_mb": 503.48828125,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 5,
+      "query": "Where is the Great Wall located?",
+      "answer": "The context provided does not contain relevant information about the Great Wall. The contexts mention the renal parenchyma, the Great Basin, and the Center for Great Apes, but none of them mention the Great Wall.",
+      "total_latency_ms": 661.5403169998899,
+      "retrieval_latency_ms": 414.23558500537183,
+      "generation_latency_ms": 247.09695599449333,
+      "total_tokens": 242,
+      "prompt_tokens": 197,
+      "context_tokens": 97,
+      "generation_tokens": 45,
+      "cpu_memory_mb": 503.490234375,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 6,
+      "query": "Who developed the theory of relativity?",
+      "answer": "The provided context doesn't contain relevant information about the theory of relativity or its developer. The contexts are about Stevie Wonder, the development of team sports, and transfer agents, but none of them mention the theory of relativity.",
+      "total_latency_ms": 654.7479509972618,
+      "retrieval_latency_ms": 274.8614779993659,
+      "generation_latency_ms": 379.6751519985264,
+      "total_tokens": 264,
+      "prompt_tokens": 216,
+      "context_tokens": 134,
+      "generation_tokens": 48,
+      "cpu_memory_mb": 503.49609375,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 7,
+      "query": "What is the largest rainforest?",
+      "answer": "The provided context does not contain relevant information about the largest rainforest.",
+      "total_latency_ms": 520.0571790046524,
+      "retrieval_latency_ms": 327.89541599777294,
+      "generation_latency_ms": 191.9466229956015,
+      "total_tokens": 177,
+      "prompt_tokens": 162,
+      "context_tokens": 65,
+      "generation_tokens": 15,
+      "cpu_memory_mb": 503.5,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 8,
+      "query": "What plays did Shakespeare write?",
+      "answer": "The provided context does not contain relevant information about Shakespeare or his plays.",
+      "total_latency_ms": 471.4944099978311,
+      "retrieval_latency_ms": 268.0157290014904,
+      "generation_latency_ms": 203.33593499526614,
+      "total_tokens": 223,
+      "prompt_tokens": 208,
+      "context_tokens": 132,
+      "generation_tokens": 15,
+      "cpu_memory_mb": 503.5,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 9,
+      "query": "How many bones are in the human body?",
+      "answer": "The provided contexts do not contain information about the total number of bones in the human body. They mention specific bones or groups of bones (ossicles, tibia, fibula), as well as plates (which are related to geology, not human anatomy), but do not provide a comprehensive count of all bones in the human body.",
+      "total_latency_ms": 870.9454240015475,
+      "retrieval_latency_ms": 284.0927270008251,
+      "generation_latency_ms": 586.7175309977029,
+      "total_tokens": 272,
+      "prompt_tokens": 204,
+      "context_tokens": 108,
+      "generation_tokens": 68,
+      "cpu_memory_mb": 503.509765625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 10,
+      "query": "What is the capital of France?",
+      "answer": "The provided context doesn't contain relevant information about the capital of France.",
+      "total_latency_ms": 460.6271000011475,
+      "retrieval_latency_ms": 270.50968399998965,
+      "generation_latency_ms": 189.9364070050069,
+      "total_tokens": 171,
+      "prompt_tokens": 156,
+      "context_tokens": 71,
+      "generation_tokens": 15,
+      "cpu_memory_mb": 503.52734375,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 11,
+      "query": "Who wrote the novel '1984'?",
+      "answer": "The provided context does not contain relevant information about the novel '1984'. Therefore, I cannot answer the question based on the given context.",
+      "total_latency_ms": 708.4982090018457,
+      "retrieval_latency_ms": 462.96703700500075,
+      "generation_latency_ms": 245.3468560051988,
+      "total_tokens": 207,
+      "prompt_tokens": 178,
+      "context_tokens": 80,
+      "generation_tokens": 29,
+      "cpu_memory_mb": 503.52734375,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 12,
+      "query": "How many bones are in the human body?",
+      "answer": "The provided context does not contain information about the total number of bones in the human body. It only mentions specific bones or groups of bones, such as the ossicles, the tibia, and the fibula, but does not provide a comprehensive count.",
+      "total_latency_ms": 676.6390439952374,
+      "retrieval_latency_ms": 271.76756400149316,
+      "generation_latency_ms": 404.63828099746024,
+      "total_tokens": 256,
+      "prompt_tokens": 204,
+      "context_tokens": 108,
+      "generation_tokens": 52,
+      "cpu_memory_mb": 503.53125,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 13,
+      "query": "Explain what is the capital of France?",
+      "answer": "The provided context does not contain relevant information about the capital of France. It only mentions the capitals of Indonesia (Jakarta), California (Sacramento), and Spain (Madrid), but does not provide information about France.",
+      "total_latency_ms": 580.0649180018809,
+      "retrieval_latency_ms": 302.5110410017078,
+      "generation_latency_ms": 277.3547460019472,
+      "total_tokens": 202,
+      "prompt_tokens": 157,
+      "context_tokens": 71,
+      "generation_tokens": 45,
+      "cpu_memory_mb": 503.53125,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    },
+    {
+      "query_id": 14,
+      "query": "Explain what plays did Shakespeare write?",
+      "answer": "The provided context does not contain relevant information about Shakespeare or his plays. Therefore, I cannot provide an answer based on the given context.",
+      "total_latency_ms": 493.0407580031897,
+      "retrieval_latency_ms": 266.1279239982832,
+      "generation_latency_ms": 226.75990700372495,
+      "total_tokens": 237,
+      "prompt_tokens": 209,
+      "context_tokens": 132,
+      "generation_tokens": 28,
+      "cpu_memory_mb": 503.53125,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766693218.9077382
+    }
+  ]
+}

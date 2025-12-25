@@ -1,0 +1,28 @@
+{
+  "prompt_cache": {
+    "type": "prompt_cache",
+    "hits": 3,
+    "misses": 5,
+    "total_lookups": 8,
+    "hit_rate": 0.375,
+    "current_size": 5,
+    "max_size": 1000,
+    "utilization": 0.005
+  },
+  "semantic_cache": {
+    "type": "semantic_cache",
+    "hits": 0,
+    "misses": 5,
+    "total_lookups": 5,
+    "hit_rate": 0.0,
+    "current_size": 5,
+    "max_size": 1000,
+    "utilization": 0.005,
+    "similarity_threshold": 0.85
+  },
+  "combined": {
+    "total_hits": 3,
+    "total_lookups": 13,
+    "overall_hit_rate": 0.23076923076923078
+  }
+}

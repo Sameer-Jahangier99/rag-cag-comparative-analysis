@@ -1,0 +1,142 @@
+{
+  "config": "vanilla_rag",
+  "summary": {
+    "total_queries": 5,
+    "runtime_seconds": 33.763672828674316,
+    "latency": {
+      "total": {
+        "mean": 551.4213079994079,
+        "median": 519.356960998266,
+        "p50": 519.356960998266,
+        "p95": 674.6183869996457,
+        "p99": 699.0637054000399,
+        "std": 80.39943682548933,
+        "min": 482.08035199786536,
+        "max": 705.1750350001385
+      },
+      "retrieval": {
+        "mean": 329.8334805993363,
+        "median": 332.1372549980879
+      },
+      "generation": {
+        "mean": 221.34062760014785,
+        "median": 185.22930600011023
+      }
+    },
+    "tokens": {
+      "total": {
+        "sum": 1030,
+        "mean": 206.0,
+        "median": 212.0,
+        "std": 24.535688292770594
+      },
+      "prompt": {
+        "mean": 187.2,
+        "median": 178.0
+      },
+      "context": {
+        "mean": 98.4,
+        "median": 80.0
+      },
+      "generation": {
+        "mean": 18.8,
+        "median": 17.0
+      }
+    },
+    "memory": {
+      "cpu": {
+        "mean_mb": 501.39609375,
+        "peak_mb": 503.009765625
+      },
+      "gpu": {
+        "mean_mb": 0.0,
+        "peak_mb": 0.0
+      }
+    },
+    "throughput": {
+      "queries_per_second": 0.1480666359451254
+    }
+  },
+  "individual_queries": [
+    {
+      "query_id": 0,
+      "query": "What is the capital of France?",
+      "answer": "The provided context does not contain relevant information about the capital of France.",
+      "total_latency_ms": 705.1750350001385,
+      "retrieval_latency_ms": 319.67852399975527,
+      "generation_latency_ms": 385.09497299673967,
+      "total_tokens": 171,
+      "prompt_tokens": 156,
+      "context_tokens": 71,
+      "generation_tokens": 15,
+      "cpu_memory_mb": 503.009765625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766692972.793406
+    },
+    {
+      "query_id": 1,
+      "query": "Who wrote the novel '1984'?",
+      "answer": "The provided context does not contain relevant information about the novel '1984'. However, based on general knowledge, the novel '1984' was written by George Orwell.",
+      "total_latency_ms": 552.3917949976749,
+      "retrieval_latency_ms": 328.3009890001267,
+      "generation_latency_ms": 223.87887600052636,
+      "total_tokens": 213,
+      "prompt_tokens": 178,
+      "context_tokens": 80,
+      "generation_tokens": 35,
+      "cpu_memory_mb": 500.9453125,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766692972.793406
+    },
+    {
+      "query_id": 2,
+      "query": "When did World War II end?",
+      "answer": "World War II ended in 1945.",
+      "total_latency_ms": 482.08035199786536,
+      "retrieval_latency_ms": 332.1372549980879,
+      "generation_latency_ms": 149.71949000027962,
+      "total_tokens": 212,
+      "prompt_tokens": 202,
+      "context_tokens": 102,
+      "generation_tokens": 10,
+      "cpu_memory_mb": 500.947265625,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766692972.793406
+    },
+    {
+      "query_id": 3,
+      "query": "What is the largest planet in the solar system?",
+      "answer": "According to Context 1, the largest planet in the Solar System is Jupiter.",
+      "total_latency_ms": 498.10239700309467,
+      "retrieval_latency_ms": 335.110669999267,
+      "generation_latency_ms": 162.7804930030834,
+      "total_tokens": 190,
+      "prompt_tokens": 173,
+      "context_tokens": 78,
+      "generation_tokens": 17,
+      "cpu_memory_mb": 501.03125,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766692972.793406
+    },
+    {
+      "query_id": 4,
+      "query": "Who discovered penicillin?",
+      "answer": "The provided context does not contain relevant information about the discovery of penicillin.",
+      "total_latency_ms": 519.356960998266,
+      "retrieval_latency_ms": 333.9399649994448,
+      "generation_latency_ms": 185.22930600011023,
+      "total_tokens": 244,
+      "prompt_tokens": 227,
+      "context_tokens": 161,
+      "generation_tokens": 17,
+      "cpu_memory_mb": 501.046875,
+      "gpu_memory_mb": 0.0,
+      "num_retrieved_docs": 3,
+      "timestamp": 1766692972.793406
+    }
+  ]
+}

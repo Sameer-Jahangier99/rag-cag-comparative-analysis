@@ -1,0 +1,211 @@
+{
+  "config": "CAG_Enhanced_RAG",
+  "summary": {
+    "system_type": "CAG_Enhanced_RAG",
+    "total_queries": 8,
+    "runtime_seconds": 23.18543291091919,
+    "cache_performance": {
+      "total_hits": 3,
+      "total_misses": 5,
+      "overall_hit_rate": 0.375,
+      "prompt_cache_hits": 3,
+      "semantic_cache_hits": 0,
+      "cache_breakdown": {
+        "prompt": 1.0,
+        "semantic": 0.0
+      }
+    },
+    "latency": {
+      "all_queries": {
+        "mean": 337.8191616247932,
+        "median": 453.8846485011163,
+        "p50": 453.8846485011163,
+        "p95": 617.4635545005003,
+        "p99": 623.5358165018988,
+        "std": 268.10468061162527,
+        "min": 0.02500799746485427,
+        "max": 625.0538820022484
+      },
+      "cache_hits": {
+        "mean": 0.03742499878474822,
+        "median": 0.026738998712971807,
+        "p95": 0.057149100030073896
+      },
+      "cache_misses": {
+        "mean": 540.4882036003983,
+        "median": 566.2506070002564,
+        "p95": 620.7165520012495
+      },
+      "speedup_factor": 14441.903036765441,
+      "cache_lookup": {
+        "mean": 8.71204450049845,
+        "median": 11.705619999702321
+      },
+      "retrieval": {
+        "mean": 242.16354680102086,
+        "median": 219.4152150041191
+      },
+      "generation": {
+        "mean": 272.87510079768253,
+        "median": 274.99839899974177
+      }
+    },
+    "tokens": {
+      "total": {
+        "sum": 765,
+        "mean": 95.625,
+        "median": 91.0,
+        "std": 88.38260221898878
+      },
+      "saved": {
+        "total": 1500,
+        "mean": 187.5,
+        "median": 0.0,
+        "percentage_saved": 66.22516556291392
+      }
+    },
+    "memory": {
+      "cpu": {
+        "mean_mb": 500.89501953125,
+        "peak_mb": 502.59375
+      },
+      "gpu": {
+        "mean_mb": 0.0,
+        "peak_mb": 0.0
+      }
+    },
+    "throughput": {
+      "queries_per_second": 0.3450193376561271
+    }
+  },
+  "individual_queries": [
+    {
+      "query_id": 0,
+      "query": "What is the capital of France?",
+      "answer": "The provided context doesn't contain relevant information about the capital of France.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 603.3672319972538,
+      "cache_lookup_latency_ms": 15.685001002566423,
+      "retrieval_latency_ms": 198.78969799901824,
+      "generation_latency_ms": 375.38733599649277,
+      "total_tokens": 80,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 502.59375,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693044.143179
+    },
+    {
+      "query_id": 1,
+      "query": "Who wrote the novel '1984'?",
+      "answer": "The provided context doesn't contain relevant information about the novel '1984'.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 436.44087400025455,
+      "cache_lookup_latency_ms": 17.87443200009875,
+      "retrieval_latency_ms": 219.4152150041191,
+      "generation_latency_ms": 190.74076599645196,
+      "total_tokens": 102,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 500.875,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693044.143179
+    },
+    {
+      "query_id": 2,
+      "query": "When did World War II end?",
+      "answer": "The provided context does not contain information about when World War II ended. It discusses the Vietnam War, the history of Coca-Cola, and the lead-up to war between Japan and the United States, but does not mention the end of World War II.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 625.0538820022484,
+      "cache_lookup_latency_ms": 11.839282000437379,
+      "retrieval_latency_ms": 323.53918900480494,
+      "generation_latency_ms": 274.99839899974177,
+      "total_tokens": 231,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 500.892578125,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693044.143179
+    },
+    {
+      "query_id": 3,
+      "query": "What is the largest planet in the solar system?",
+      "answer": "The largest planet in the Solar System is Jupiter.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 471.3284230019781,
+      "cache_lookup_latency_ms": 12.61574799718801,
+      "retrieval_latency_ms": 264.740154001629,
+      "generation_latency_ms": 183.41838799824473,
+      "total_tokens": 134,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 500.548828125,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693044.143179
+    },
+    {
+      "query_id": 4,
+      "query": "Who discovered penicillin?",
+      "answer": "The provided context doesn't contain relevant information about the discovery of penicillin. The contexts discuss the plum pudding model of the atom, Americans during the Vietnam War, and the European colonization of the Americas, but none of them mention penicillin.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 566.2506070002564,
+      "cache_lookup_latency_ms": 11.571957998967264,
+      "retrieval_latency_ms": 204.33347799553303,
+      "generation_latency_ms": 339.83061499748146,
+      "total_tokens": 218,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 500.5625,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693044.143179
+    },
+    {
+      "query_id": 5,
+      "query": "What is the capital of France?",
+      "answer": "The provided context doesn't contain relevant information about the capital of France.",
+      "cache_hit": true,
+      "cache_type": "prompt",
+      "total_latency_ms": 0.06052800017641857,
+      "cache_lookup_latency_ms": 0.0597140024183318,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 500,
+      "cpu_memory_mb": 500.5625,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693044.143179
+    },
+    {
+      "query_id": 6,
+      "query": "Who wrote the novel '1984'?",
+      "answer": "The provided context doesn't contain relevant information about the novel '1984'.",
+      "cache_hit": true,
+      "cache_type": "prompt",
+      "total_latency_ms": 0.02500799746485427,
+      "cache_lookup_latency_ms": 0.02443399716867134,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 500,
+      "cpu_memory_mb": 500.5625,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693044.143179
+    },
+    {
+      "query_id": 7,
+      "query": "When did World War II end?",
+      "answer": "The provided context does not contain information about when World War II ended. It discusses the Vietnam War, the history of Coca-Cola, and the lead-up to war between Japan and the United States, but does not mention the end of World War II.",
+      "cache_hit": true,
+      "cache_type": "prompt",
+      "total_latency_ms": 0.026738998712971807,
+      "cache_lookup_latency_ms": 0.025787005142774433,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 500,
+      "cpu_memory_mb": 500.5625,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693044.143179
+    }
+  ]
+}

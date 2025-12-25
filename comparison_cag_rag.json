@@ -1,0 +1,323 @@
+{
+  "config": "CAG_Enhanced_RAG",
+  "summary": {
+    "system_type": "CAG_Enhanced_RAG",
+    "total_queries": 15,
+    "runtime_seconds": 24.818001985549927,
+    "cache_performance": {
+      "total_hits": 5,
+      "total_misses": 10,
+      "overall_hit_rate": 0.3333333333333333,
+      "prompt_cache_hits": 3,
+      "semantic_cache_hits": 2,
+      "cache_breakdown": {
+        "prompt": 0.6,
+        "semantic": 0.4
+      }
+    },
+    "latency": {
+      "all_queries": {
+        "mean": 415.18663379974896,
+        "median": 474.07959299744107,
+        "p50": 474.07959299744107,
+        "p95": 873.9001369998731,
+        "p99": 913.6961841960147,
+        "std": 324.6544120152991,
+        "min": 0.01547000283608213,
+        "max": 923.64519599505
+      },
+      "cache_hits": {
+        "mean": 4.865994800638873,
+        "median": 0.06746700091753155,
+        "p95": 12.930095400952268
+      },
+      "cache_misses": {
+        "mean": 620.346953299304,
+        "median": 559.8331580004015,
+        "p95": 891.6662294981505
+      },
+      "speedup_factor": 127.48615210559956,
+      "cache_lookup": {
+        "mean": 11.791181066655554,
+        "median": 8.701471000676975
+      },
+      "retrieval": {
+        "mean": 290.1185197995801,
+        "median": 213.26809400125057
+      },
+      "generation": {
+        "mean": 296.7677991007804,
+        "median": 260.8792489991174
+      }
+    },
+    "tokens": {
+      "total": {
+        "sum": 1558,
+        "mean": 103.86666666666666,
+        "median": 121.0,
+        "std": 81.65934661071499
+      },
+      "saved": {
+        "total": 2500,
+        "mean": 166.66666666666666,
+        "median": 0.0,
+        "percentage_saved": 61.60670280926565
+      }
+    },
+    "memory": {
+      "cpu": {
+        "mean_mb": 586.4705729166667,
+        "peak_mb": 589.1484375
+      },
+      "gpu": {
+        "mean_mb": 0.0,
+        "peak_mb": 0.0
+      }
+    },
+    "throughput": {
+      "queries_per_second": 0.6043612410795455
+    }
+  },
+  "individual_queries": [
+    {
+      "query_id": 0,
+      "query": "What is the capital of France?",
+      "answer": "The provided context doesn't contain relevant information about the capital of France.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 594.6553140020114,
+      "cache_lookup_latency_ms": 67.10831199598033,
+      "retrieval_latency_ms": 194.22860099439276,
+      "generation_latency_ms": 323.37758500216296,
+      "total_tokens": 80,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 589.1484375,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 1,
+      "query": "Who wrote the novel '1984'?",
+      "answer": "The provided context does not contain relevant information about the novel '1984'. However, based on general knowledge, the novel '1984' was written by George Orwell.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 446.43523099512095,
+      "cache_lookup_latency_ms": 10.002964998420794,
+      "retrieval_latency_ms": 214.27293000306236,
+      "generation_latency_ms": 212.9805779986782,
+      "total_tokens": 121,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 588.42578125,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 2,
+      "query": "When did World War II end?",
+      "answer": "The provided context does not contain relevant information about when World War II ended. It discusses the Vietnam War, the history of Coca-Cola, and the lead-up to war between Japan and the United States, but does not mention the end of World War II.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 525.0110019987915,
+      "cache_lookup_latency_ms": 9.969610997359268,
+      "retrieval_latency_ms": 206.54017500055488,
+      "generation_latency_ms": 297.0109070010949,
+      "total_tokens": 232,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 588.44140625,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 3,
+      "query": "What is the largest planet in the solar system?",
+      "answer": "The largest planet in the Solar System is Jupiter.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 923.64519599505,
+      "cache_lookup_latency_ms": 11.025288004020695,
+      "retrieval_latency_ms": 657.7951349972864,
+      "generation_latency_ms": 243.5681260030833,
+      "total_tokens": 134,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 587.6796875,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 4,
+      "query": "Who discovered penicillin?",
+      "answer": "The provided context does not contain relevant information about the discovery of penicillin. Therefore, I cannot answer the question based on the given context.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 629.4808520033257,
+      "cache_lookup_latency_ms": 8.540771996194962,
+      "retrieval_latency_ms": 360.8377010023105,
+      "generation_latency_ms": 249.76070500269998,
+      "total_tokens": 197,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 587.6796875,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 5,
+      "query": "Where is the Great Wall located?",
+      "answer": "The provided context does not contain relevant information about the location of the Great Wall.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 428.2905189975281,
+      "cache_lookup_latency_ms": 8.446576997812372,
+      "retrieval_latency_ms": 210.2328570035752,
+      "generation_latency_ms": 199.58834299904993,
+      "total_tokens": 120,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 587.681640625,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 6,
+      "query": "Who developed the theory of relativity?",
+      "answer": "The provided context does not contain relevant information about the theory of relativity or its developer. The contexts provided are about Stevie Wonder, the origin of popular team sports, and transfer agents, respectively. None of these contexts mention the theory of relativity or its developer, Albert Einstein.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 851.5962370001944,
+      "cache_lookup_latency_ms": 8.701471000676975,
+      "retrieval_latency_ms": 212.2632579994388,
+      "generation_latency_ms": 620.7068350049667,
+      "total_tokens": 201,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 586.439453125,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 7,
+      "query": "What is the largest rainforest?",
+      "answer": "The provided context does not contain information about the largest rainforest. It includes information about the largest stalagmite, the largest planet in the Solar System, and the 11th largest city in the U.S. state of Oregon, but does not mention rainforests.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 477.6947630016366,
+      "cache_lookup_latency_ms": 8.111979004752357,
+      "retrieval_latency_ms": 187.57798099977663,
+      "generation_latency_ms": 271.99779299553484,
+      "total_tokens": 134,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 585.1953125,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 8,
+      "query": "What plays did Shakespeare write?",
+      "answer": "The provided context does not contain relevant information about Shakespeare or his plays. Therefore, I am unable to answer the question based on the given context.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 474.07959299744107,
+      "cache_lookup_latency_ms": 8.697459001268726,
+      "retrieval_latency_ms": 217.7934759965865,
+      "generation_latency_ms": 237.59245599649148,
+      "total_tokens": 170,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 585.1953125,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 9,
+      "query": "How many bones are in the human body?",
+      "answer": "The provided context doesn't contain information about the total number of bones in the human body. It only mentions specific bones or groups of bones, such as the ossicles, the tibia, and the fibula, but does not provide a comprehensive count.",
+      "cache_hit": false,
+      "cache_type": null,
+      "total_latency_ms": 852.5808260019403,
+      "cache_lookup_latency_ms": 11.937003000639379,
+      "retrieval_latency_ms": 439.643083998817,
+      "generation_latency_ms": 311.09466300404165,
+      "total_tokens": 169,
+      "tokens_saved": 0,
+      "cpu_memory_mb": 585.1953125,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 10,
+      "query": "What is the capital of France?",
+      "answer": "The provided context doesn't contain relevant information about the capital of France.",
+      "cache_hit": true,
+      "cache_type": "prompt",
+      "total_latency_ms": 0.06746700091753155,
+      "cache_lookup_latency_ms": 0.0668479988235049,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 500,
+      "cpu_memory_mb": 585.1953125,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 11,
+      "query": "Who wrote the novel '1984'?",
+      "answer": "The provided context does not contain relevant information about the novel '1984'. However, based on general knowledge, the novel '1984' was written by George Orwell.",
+      "cache_hit": true,
+      "cache_type": "prompt",
+      "total_latency_ms": 0.01975399936782196,
+      "cache_lookup_latency_ms": 0.019241997506469488,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 500,
+      "cpu_memory_mb": 585.1953125,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 12,
+      "query": "How many bones are in the human body?",
+      "answer": "The provided context doesn't contain information about the total number of bones in the human body. It only mentions specific bones or groups of bones, such as the ossicles, the tibia, and the fibula, but does not provide a comprehensive count.",
+      "cache_hit": true,
+      "cache_type": "prompt",
+      "total_latency_ms": 0.01547000283608213,
+      "cache_lookup_latency_ms": 0.015094003174453974,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 500,
+      "cpu_memory_mb": 585.1953125,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 13,
+      "query": "Explain what is the capital of France?",
+      "answer": "The provided context doesn't contain relevant information about the capital of France.",
+      "cache_hit": true,
+      "cache_type": "semantic",
+      "total_latency_ms": 13.474398001562804,
+      "cache_lookup_latency_ms": 13.473357001203112,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 500,
+      "cpu_memory_mb": 585.1953125,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    },
+    {
+      "query_id": 14,
+      "query": "Explain what plays did Shakespeare write?",
+      "answer": "The provided context does not contain relevant information about Shakespeare or his plays. Therefore, I am unable to answer the question based on the given context.",
+      "cache_hit": true,
+      "cache_type": "semantic",
+      "total_latency_ms": 10.752884998510126,
+      "cache_lookup_latency_ms": 10.751738001999911,
+      "retrieval_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_tokens": 0,
+      "tokens_saved": 500,
+      "cpu_memory_mb": 585.1953125,
+      "gpu_memory_mb": 0.0,
+      "timestamp": 1766693218.9261749
+    }
+  ]
+}
